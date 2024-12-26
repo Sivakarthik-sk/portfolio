@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sivakarthik's Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(to right, #f8f9fa, #e9ecef);
+            color: #333;
+        }
+
+        header {
+            background: #004aad;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        header .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #004aad;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .skills-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .skills-list li {
+            background-color: #004aad;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .skills-list li:hover {
+            transform: scale(1.1);
+        }
+
+        .project {
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            text-align: left;
+            max-width: 800px;
+        }
+
+        .project h3 {
+            color: #004aad;
+        }
+
+        .project a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #004aad;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .contact-details, .contact-form {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            flex: 1;
+        }
+
+        .contact-details p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .contact-details a {
+            color: #004aad;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+
+        form label {
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        form button {
+            background-color: #004aad;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        form button:hover {
+            background-color: #ffcc00;
+            color: #004aad;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #004aad;
+            color: white;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Sivakarthik's Portfolio</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">My Skills</a></li>
+                <li><a href="#projects">My Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#resume">My Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h1>About Me</h1>
+        <p>Hi, I'm <strong>Sivakarthik Baskar</strong>, a passionate full-stack developer with expertise in building dynamic web applications. I have a deep interest in learning new technologies and solving real-world problems through innovative solutions.</p>
+        <p>My journey started with an interest in coding during high school, which led me to explore HTML, CSS, and JavaScript. Over time, I have honed my skills in frameworks like React.js and backend technologies like Node.js. I am currently focused on cloud computing and deploying scalable web applications.</p>
+        <p>Apart from coding, I enjoy engaging in open-source projects, exploring AI and blockchain technologies, and contributing to tech communities. In my free time, I enjoy reading, photography, and brainstorming ideas for impactful projects.</p>
+        <img src="https://drive.google.com/uc?id=1tJfzAgl2_5vWaJLjjG2o8dNJqWs4hlDs" alt="Profile Picture" class="profile-img">
+    </section>
+    <section id="skills">
+        <h1>My Skills</h1>
+        <ul class="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>Node.js</li>
+            <li>Python</li>
+            <li>C</li>
+            <li>Docker</li>
+            <li>AWS</li>
+        </ul>
+    </section>
+    <section id="projects">
+        <h1>My Projects</h1>
+        <div class="project">
+            <h3>Plagiarism Checker</h3>
+            <p>An efficient plagiarism detection tool that analyzes documents for duplicate content using advanced algorithms. It features a user-friendly interface and real-time reporting.</p>
+            <a href="https://github.com/Sivakarthik-sk/plagiarism_chekker/tree/master" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Mental Health Companion</h3>
+            <p>A thoughtful and supportive application designed to promote mental well-being. It provides personalized mental health resources, journaling features, and relaxation techniques.</p>
+            <a href="https://github.com/Sivakarthik-sk/sivakarthik/blob/main/project2.html" target="_blank">View Project</a>
+        </div>
+    </section>
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <div class="contact-container">
+            <div class="contact-details">
+                <p><strong>Email:</strong> <a href="mailto:sivakarthikbaskar@gmail.com">sivakarthikbaskar@gmail.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+917603834258">+91 7603834258</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sivakarthik-baskar-068516329" target="_blank">linkedin.com/in/sivakarthik-baskar</a></p>
+            </div>
+            <div class="contact-form">
+                <form action="https://formspree.io/f/xzzzzngd" method="POST">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="resume">
+        <h1>My Resume</h1>
+        <a href="https://drive.google.com/uc?id=1gS2eYXYwh_dM1sK9OTzEQQFvDIfHibDW" download class="resume-btn">Download Resume</a>
+    </section>
+    <footer>
+        <p>&copy; 2024 Sivakarthik Baskar</p>
+    </footer>
+</body>
+</html>
